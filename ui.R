@@ -6,7 +6,7 @@ shinyUI(
                      fileInput('file1', '',accept = c('.jpg','.jpeg')),
                      imageOutput('outputImage')
                      ),
-              column(width=8,
+              column(width=8, verbatimTextOutput("answer"),
                      plotOutput("plot")
                      )
               )
